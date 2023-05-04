@@ -24,6 +24,8 @@ body{
 .image{
     display: flex;
     align-items: center;
+    margin: auto;
+    /* background-color: brown; */
 }
 
 .sister{
@@ -51,23 +53,23 @@ body{
 h1{   
     text-align: center;
     position: relative;
-    bottom: 60px;
+    /* bottom: 60px; */
 }
 
 .accordion {
     background-color: transparent;
     cursor: pointer;
-    padding: 20px;
+    padding: 20px 0;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
-    /* position: relative;
-    bottom: 50px; */
+    position: relative;
+    /* bottom: 50px; */
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
   .accordion:hover {
     color: hsl(14, 88%, 65%);
   }
@@ -76,16 +78,23 @@ h1{
     color: hsl(238, 29%, 16%);
     font-weight: 700;
 }
-  
-  /* Style the accordion panel. Note: hidden by default */
+
+  .arrow{
+    /* transform: rotate('90deg'); */
+    display: inline;
+    /* justify-items: center; */
+    float:right;
+  }
+
   .panel {
     margin-right: 50px;
     line-height: 15px;
     font-size: 12px;
-    padding-top: 10px;
+    padding-top: 0 10px;
     display: none;
     overflow: hidden;
     transition: 0.5s;
+    /* z-index: -1; */
 
   }
 
