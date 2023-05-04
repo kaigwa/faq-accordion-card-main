@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap');
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: auto;
+    width: 375px;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+}
+
+.container{
+    position: relative;
+    top: 150px;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+}
+
+.sister{
+    width: 200px;
+    position: relative;
+    bottom: 105px;
+    left: 50px;
+}
+
+.shade{
+    width: 200px;
+    position: relative;
+    bottom: 50px;
+    right: 150px;
+}
+
+.white{
+    padding: 15px ;
+    background-color: white;
+    border-radius: 20px;
+    height: 500px; 
+     
+}
+
+h1{   
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+}
+
+.accordion {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    /* position: relative;
+    bottom: 50px; */
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .accordion:hover {
+    color: hsl(14, 88%, 65%);
+  }
+
+  .accordion:focus{
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    margin-right: 50px;
+    line-height: 15px;
+    font-size: 12px;
+    padding-top: 10px;
+    display: none;
+    overflow: hidden;
+    transition: 0.5s;
+
+  }
+
+  hr{
+    border: 0.05px solid gray;
+    position: relative;
+    /* bottom: 50px; */
+    opacity: 0.2;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: relative;
+    top: 190px;
+}
+
+.attribution a { 
+    color: hsl(273, 75%, 66%);
+    /* color: hsl(228, 45%, 44%);  */
+    text-decoration: none;
+    font-size: 12px;
+}
