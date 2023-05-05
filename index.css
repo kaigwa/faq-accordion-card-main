@@ -11,9 +11,10 @@ body{
     margin: auto;
     width: 375px;
     height: 100vh;
-    padding: 20px;
+    padding: 20px 0;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
@@ -70,7 +71,7 @@ h1{
 }
 
 .qn{
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .accordion {
@@ -99,11 +100,10 @@ h1{
 }
 
   .arrow{
-    /* transform: rotate('90deg'); */
     display: inline;
-    /* justify-items: center; */
+    margin-top: 6px;
     float:right;
-    
+    /* transform: rotate(-180deg) */
   }
 
   .panel {
@@ -113,13 +113,18 @@ h1{
     overflow: hidden;
     transition: 0.5s;
     opacity: 0.5;
+    padding-top: 10px;
     max-height: 0;
-    transition: max-height 0.5s;
+    transition: max-height 1.0s ease;
 
   }
 
   input[type='radio']:checked + .panel{
     max-height: 100px;
+  }
+
+  input[type='radio']:checked + .arrow{
+    transform: rotate(-180deg)
   }
 
   hr{
@@ -154,7 +159,7 @@ h1{
 @media only screen and (min-width: 768px){
     body{
         width: 100vw;
-        margin: auto;
+        /* margin: auto; */
     }
 
     .white{
