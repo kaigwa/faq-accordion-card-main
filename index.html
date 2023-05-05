@@ -37,36 +37,51 @@
             <div class="content">
                 <!-- title -->
                 <h1>FAQ</h1>
-
-                <button class="accordion">How many team members can I invite?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span> </button>
-                <div class="panel">
-                <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
-                    team members for the Premium plan.</p>
+                <div class="qn">
+                    <label for="first" class="accordion">How many team members can I invite?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span> </label>
+                    <input type="radio" id="first" name="accordion" >
+                    <div class="panel">
+                    <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+                        team members for the Premium plan.</p>
+                    </div>
                 </div><hr>
+                
+                <div class="qn">
+                    <label for="second" class="accordion">What is the maximum file upload size? <span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></label>
+                    <input type="radio" id="second" name="accordion" checked>
+                    <div class="panel">
+                    <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                    </div>
+                </div>
+                <hr>
 
-                <button class="accordion">What is the maximum file upload size? <span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></button>
+                <div class="qn">
+                    <label for="third" class="accordion">How do I reset my password?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></label>
+                    <input type="radio" id="third" name="accordion">
+                    <div class="panel">
+                    <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+                        A reset link will be emailed to you.</p>
+                    </div>
+                </div>
+               <hr>
 
-                <div class="panel">
-                <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-                </div><hr>
+                <div class="qn">
+                    <label for="fourth" class="accordion">Can I cancel my subscription?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></label>
+                    <input type="radio" id="fourth" name="accordion">
+                    <div class="panel">
+                    <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+                    </div>
+                </div>
+                <hr>
 
-                <button class="accordion">How do I reset my password?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></button>
-
-                <div class="panel">
-                <p>Click “Forgot password” from the login page or “Change password” from your profile page.
-                    A reset link will be emailed to you.</p>
-                </div><hr>
-
-                <button class="accordion">Can I cancel my subscription?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></button>
-
-                <div class="panel">
-                <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
-                </div><hr>
-
-                <button class="accordion">Do you provide additional support?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></button>
-                <div class="panel">
-                <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-                </div><hr>
+                <div class="qn">
+                    <label for="fiveth" class="accordion">Do you provide additional support?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></label>
+                    <input type="radio" id="fiveth" name="accordion">
+                    <div class="panel">
+                    <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                    </div>
+                </div>
+                <hr>
             </div>
            
         </div>
@@ -77,7 +92,7 @@
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://www.linkedin.com/in/edwin-lugakingira-868064110/">Edwin Lugakingira</a>.
         </div>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
 </body>
 </html>
 

@@ -69,19 +69,21 @@ h1{
     /* bottom: 60px; */
 }
 
+.qn{
+    padding: 15px 0;
+}
+
 .accordion {
     background-color: transparent;
     cursor: pointer;
-    padding: 20px 0;
+    /* padding: 20px 0; */
     width: 100%;
     text-align: left;
     border: none;
-    outline: none;
-    transition: 0.4s;
+    transition: 0.3s;
     position: relative;
-    /* bottom: 50px; */
+
   }
-  
 
   .accordion:hover {
     color: hsl(14, 88%, 65%);
@@ -90,6 +92,10 @@ h1{
   .accordion:focus{
     color: hsl(238, 29%, 16%);
     font-weight: 700;
+}
+
+    input[type='radio']{
+    display: none;
 }
 
   .arrow{
@@ -104,14 +110,16 @@ h1{
     margin-right: 50px;
     line-height: 18px;
     font-size: 12px;
-    /* padding-top: 0 10px; */
-    display: none;
     overflow: hidden;
     transition: 0.5s;
     opacity: 0.5;
+    max-height: 0;
+    transition: max-height 0.5s;
 
-    /* z-index: -1; */
+  }
 
+  input[type='radio']:checked + .panel{
+    max-height: 100px;
   }
 
   hr{
@@ -120,7 +128,6 @@ h1{
     /* bottom: 50px; */
     opacity: 0.2;
 }
-
 
 .attribution { 
     font-size: 11px; 
@@ -174,17 +181,15 @@ h1{
 
 
     #desktop{
-        position: relative;
-        bottom: 105px;
-        left: 50px;
+        transform: translate(-387%, 31%);
+    
     }
 
     #shade{
-        position: relative;
-        bottom: 50px;
-        right: 150px;
+        transform: translate(-387%, 31%);
+      
     }
-    
+
     /* .sister{
         width: 200px;
         position: relative;
