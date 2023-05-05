@@ -14,42 +14,70 @@
         <div class="white">
             <!-- animated portait of a women section -->
             <div class="image">
-                <img class="sister" src="./images/illustration-woman-online-mobile.svg" alt="image">
-                <img class="shade" src="./images/bg-pattern-mobile.svg" alt="pattern">
+<!-- 
+    background-image: url('./images/illustration-woman-online-desktop.svg');
+        background-image: url('./images/');
+ -->
+
+                
+ <picture>
+    <source  media='(min-width:700px)' srcset="./images/illustration-box-desktop.svg" alt="box">
+    <!-- <img class="sister" src="./images/illustration-woman-online-mobile.svg" alt="image"> -->
+    <img id="box" src="./images/illustration-box-desktop.svg" alt="box">
+</picture> 
+
+<picture>
+    <!-- <source media='(min-width:700px)' srcset="./images/illustration-woman-online-desktop.svg" alt="desktop"> -->
+    <source media='(min-width:700px)' srcset="./images/bg-pattern-desktop.svg" alt="bg">
+    <!-- <img class="sister" src="./images/illustration-woman-online-mobile.svg" alt="image"> -->
+    <img class="shade" src="./images/bg-pattern-mobile.svg" alt="pattern">
+</picture>
+
+<picture>
+    <source media='(min-width:700px)' srcset="./images/illustration-woman-online-desktop.svg" alt="desktop">
+
+    <!-- <source media='(min-width:700px)' srcset="./images/bg-pattern-desktop.svg" alt="bg"> -->
+    <img class="sister" src="./images/illustration-woman-online-mobile.svg" alt="image">
+    <!-- <img class="shade" src="./images/bg-pattern-mobile.svg" alt="pattern"> -->
+</picture>
+
+                
             </div>
+            <div class="content">
+                <!-- title -->
+                <h1>FAQ</h1>
 
-            <!-- title -->
-            <h1>FAQ</h1>
+                <button class="accordion">How many team members can I invite?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span> </button>
+                <div class="panel">
+                <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+                    team members for the Premium plan.</p>
+                </div><hr>
 
-            <button class="accordion">How many team members can I invite?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span> </button>
-            <div class="panel">
-            <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
-                team members for the Premium plan.</p>
-            </div><hr>
+                <button class="accordion">What is the maximum file upload size? <span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></button>
 
-            <button class="accordion">What is the maximum file upload size? <span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></button>
+                <div class="panel">
+                <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                </div><hr>
+
+                <button class="accordion">How do I reset my password?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></button>
+
+                <div class="panel">
+                <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+                    A reset link will be emailed to you.</p>
+                </div><hr>
+
+                <button class="accordion">Can I cancel my subscription?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></button>
+
+                <div class="panel">
+                <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+                </div><hr>
+
+                <button class="accordion">Do you provide additional support?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></button>
+                <div class="panel">
+                <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                </div><hr>
+            </div>
            
-            <div class="panel">
-            <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-            </div><hr>
-
-            <button class="accordion">How do I reset my password?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></button>
-          
-            <div class="panel">
-            <p>Click “Forgot password” from the login page or “Change password” from your profile page.
-                A reset link will be emailed to you.</p>
-            </div><hr>
-
-            <button class="accordion">Can I cancel my subscription?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></button>
-           
-            <div class="panel">
-            <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
-            </div><hr>
-
-            <button class="accordion">Do you provide additional support?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></button>
-            <div class="panel">
-            <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-            </div><hr>
         </div>
         
     </div>
@@ -61,3 +89,12 @@
     <script src="index.js"></script>
 </body>
 </html>
+
+
+
+<!-- 
+    C:\Users\Reset\Front-end Mentor Challenges\JS\faq-accordion-card-main\images\bg-pattern-desktop.svg
+    C:\Users\Reset\Front-end Mentor Challenges\JS\faq-accordion-card-main\images\illustration-box-desktop.svg
+
+    Request URL: file:///C:/Users/Reset/Front-end%20Mentor%20Challenges/JS/faq-accordion-card-main/images/illustration-woman-box-desktop.svg
+ -->

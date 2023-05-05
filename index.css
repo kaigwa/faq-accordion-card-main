@@ -42,12 +42,23 @@ body{
     right: 150px;
 }
 
+/* #box{
+    display: none;
+
+} */
+
 .white{
     padding: 15px ;
     background-color: white;
     border-radius: 20px;
     height: 500px; 
-     
+    position: relative;
+    top: 0px; 
+}
+
+.content{
+    position: relative;
+    bottom: 50px;
 }
 
 h1{   
@@ -84,16 +95,19 @@ h1{
     display: inline;
     /* justify-items: center; */
     float:right;
+    
   }
 
   .panel {
     margin-right: 50px;
-    line-height: 15px;
+    line-height: 18px;
     font-size: 12px;
-    padding-top: 0 10px;
+    /* padding-top: 0 10px; */
     display: none;
     overflow: hidden;
     transition: 0.5s;
+    opacity: 0.5;
+
     /* z-index: -1; */
 
   }
@@ -118,4 +132,42 @@ h1{
     /* color: hsl(228, 45%, 44%);  */
     text-decoration: none;
     font-size: 12px;
+}
+
+/* media quary section */
+/* 
+@media only screen and (min-width:600px){
+    .white{
+        width: 700px;
+        height: 440px;
+    }
+} */
+@media only screen and (min-width: 768px){
+    body{
+        width: 100vw;
+        margin: auto;
+    }
+
+    .white{
+        width: 900px;
+        height: 440px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+    
+    }
+
+    .image{
+        height: 100%;
+    }
+
+    .content{
+        padding: 20px;
+        width: 500px;
+        position: relative;
+        top: 20px;
+    }
+
+
 }
