@@ -123,8 +123,8 @@ h1{
     max-height: 100px;
   }
 
-  input[type='radio']:checked + .arrow{
-    transform: rotate(-180deg)
+ .content .active img{
+    transform: rotate(180deg)
   }
 
   hr{
@@ -149,13 +149,7 @@ h1{
 }
 
 /* media quary section */
-/* 
-@media only screen and (min-width:600px){
-    .white{
-        width: 700px;
-        height: 440px;
-    }
-} */
+
 @media only screen and (min-width: 768px){
     body{
         width: 100vw;
@@ -163,7 +157,7 @@ h1{
     }
 
     .white{
-        width: 800px;
+        width: 767px;
         height: 440px;
         display: flex;
         flex-direction: row;
@@ -180,10 +174,6 @@ h1{
         position: relative;
         top: 70%;
         right: 101%;
-      /* overflow: hidden; */
-        display: flex;
-        align-items: flex-start;
-        gap: -50px;
     }
 
 
@@ -191,7 +181,7 @@ h1{
         transform: scale(1.3);
         position: absolute;
         bottom: 40%;
-        left: -135%;
+        left: -124%;
         /* background-color: brown; */
     }
 
@@ -199,28 +189,12 @@ h1{
       transform: scale(2.5);
         position: absolute;
         bottom: 80%;
-        right: 190%;
-      
+        right: 180%;
     }
 
-    /* .sister{
-        width: 200px;
-        position: relative;
-        bottom: 105px;
-        left: 50px;
-    }
-    
-    .shade{
-        width: 200px;
-        position: relative;
-        bottom: 50px;
-        right: 150px;
-    } */
     .box {
         display: inherit;
-        transform: translate(-359.5%, 71%);
-        
-
+        transform: translate(-342%, 71%); 
       }
     
     .content{
