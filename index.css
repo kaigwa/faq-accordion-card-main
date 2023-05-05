@@ -42,10 +42,10 @@ body{
     right: 150px;
 }
 
-/* #box{
+.box{
     display: none;
 
-} */
+}
 
 .white{
     padding: 15px ;
@@ -54,6 +54,8 @@ body{
     height: 500px; 
     position: relative;
     top: 0px; 
+    box-shadow: 0px 102px 41px rgba(0, 0, 0, 0.03),
+    0px 57px 34px rgba(0, 0, 0, 0.1), 0px 25px 25px rgba(0, 0, 0, 0.17);
 }
 
 .content{
@@ -149,25 +151,63 @@ h1{
     }
 
     .white{
-        width: 900px;
+        width: 800px;
         height: 440px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-end;
         margin: auto;
     
     }
+    .illustration{
+        margin-bottom: 0;
+    }
 
     .image{
-        height: 100%;
+        transform: scale(1.5);
+        position:absolute;
+        bottom: 30px;
+        left: -30px;
+      /* overflow: hidden; */
+        /* background-color: brown; */
     }
 
+
+    #desktop{
+        position: relative;
+        bottom: 105px;
+        left: 50px;
+    }
+
+    #shade{
+        position: relative;
+        bottom: 50px;
+        right: 150px;
+    }
+    
+    /* .sister{
+        width: 200px;
+        position: relative;
+        bottom: 105px;
+        left: 50px;
+    }
+    
+    .shade{
+        width: 200px;
+        position: relative;
+        bottom: 50px;
+        right: 150px;
+    } */
+    .box {
+        display: inherit;
+        transform: translate(-387%, 31%);
+
+      }
+    
     .content{
         padding: 20px;
-        width: 500px;
-        position: relative;
+        width: 400px;
+        position: absolute;
         top: 20px;
     }
-
-
 }

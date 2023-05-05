@@ -11,38 +11,29 @@
 <body>
 
     <div class="container">
+
         <div class="white">
             <!-- animated portait of a women section -->
-            <div class="image">
-<!-- 
-    background-image: url('./images/illustration-woman-online-desktop.svg');
-        background-image: url('./images/');
- -->
+            <div class="illustration">
+                <div class="image"> 
+                    <picture>
+                        <source id="desktop" media='(min-width:700px)' srcset="./images/illustration-woman-online-desktop.svg" alt="desktop">
+                        <img class="sister" src="./images/illustration-woman-online-mobile.svg" alt="image">
+                    </picture>
+    
+                    <picture>
+                        <source id="shade" media='(min-width:700px)' srcset="./images/bg-pattern-desktop.svg" alt="bg">
+                        <img class="shade" src="./images/bg-pattern-mobile.svg" alt="pattern">
+                    </picture>
+                </div>
 
+                <div class="box">
+                    <img  src="./images/illustration-box-desktop.svg" alt="box" >
                 
- <picture>
-    <source  media='(min-width:700px)' srcset="./images/illustration-box-desktop.svg" alt="box">
-    <!-- <img class="sister" src="./images/illustration-woman-online-mobile.svg" alt="image"> -->
-    <img id="box" src="./images/illustration-box-desktop.svg" alt="box">
-</picture> 
-
-<picture>
-    <!-- <source media='(min-width:700px)' srcset="./images/illustration-woman-online-desktop.svg" alt="desktop"> -->
-    <source media='(min-width:700px)' srcset="./images/bg-pattern-desktop.svg" alt="bg">
-    <!-- <img class="sister" src="./images/illustration-woman-online-mobile.svg" alt="image"> -->
-    <img class="shade" src="./images/bg-pattern-mobile.svg" alt="pattern">
-</picture>
-
-<picture>
-    <source media='(min-width:700px)' srcset="./images/illustration-woman-online-desktop.svg" alt="desktop">
-
-    <!-- <source media='(min-width:700px)' srcset="./images/bg-pattern-desktop.svg" alt="bg"> -->
-    <img class="sister" src="./images/illustration-woman-online-mobile.svg" alt="image">
-    <!-- <img class="shade" src="./images/bg-pattern-mobile.svg" alt="pattern"> -->
-</picture>
-
-                
+                </div>
             </div>
+
+
             <div class="content">
                 <!-- title -->
                 <h1>FAQ</h1>
