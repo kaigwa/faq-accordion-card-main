@@ -161,22 +161,6 @@ h1{
 
 
 /* media quary section (moving to other devices)*/
-/* @media only screen and (min-width: 420px) {
-    body{
-        width: 100vw;
-    }    
-
-    .white {
-        margin: auto;
-        width: 375px;
-        height: 500px;
-    
-    }
-
-    
-} */
-
-
 @media only screen and (min-width: 768px){
     body{
         width: 100vw;
