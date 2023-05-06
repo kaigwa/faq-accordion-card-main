@@ -1,11 +1,15 @@
+/* css file-whole design section */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* importation of instructed font style */
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap');
 
+/* mobile-boby section */
 body{
     font-family: 'Kumbh Sans', sans-serif;
     margin: auto;
@@ -22,6 +26,8 @@ body{
     top: 150px;
 }
 
+
+/* image design section */
 .image{
     display: flex;
     align-items: center;
@@ -90,14 +96,15 @@ h1{
     color: hsl(14, 88%, 65%);
   }
 
-  .accordion:focus{
+  .accordion
+  :focus{
     color: hsl(238, 29%, 16%);
     font-weight: 700;
-}
+    }
 
     input[type='radio']{
     display: none;
-}
+    }
 
   .arrow{
     display: inline;
@@ -106,6 +113,8 @@ h1{
     /* transform: rotate(-180deg) */
   }
 
+
+/* hidden content design */
   .panel {
     margin-right: 50px;
     line-height: 18px;
@@ -123,9 +132,9 @@ h1{
     max-height: 100px;
   }
 
- .content .active img{
+ /* .active img{
     transform: rotate(180deg)
-  }
+  } */
 
   hr{
     border: 0.05px solid gray;
@@ -134,6 +143,8 @@ h1{
     opacity: 0.2;
 }
 
+
+/* content creators selectors */
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -148,7 +159,23 @@ h1{
     font-size: 12px;
 }
 
-/* media quary section */
+
+/* media quary section (moving to other devices)*/
+/* @media only screen and (min-width: 420px) {
+    body{
+        width: 100vw;
+    }    
+
+    .white {
+        margin: auto;
+        width: 375px;
+        height: 500px;
+    
+    }
+
+    
+} */
+
 
 @media only screen and (min-width: 768px){
     body{
@@ -163,8 +190,10 @@ h1{
         flex-direction: row;
         justify-content: flex-end;
         margin: auto;
-    
     }
+
+
+/* image design section */
     .illustration{
         margin-bottom: 0;
     }
@@ -175,7 +204,6 @@ h1{
         top: 70%;
         right: 101%;
     }
-
 
     .sister{
         transform: scale(1.3);
@@ -195,8 +223,10 @@ h1{
     .box {
         display: inherit;
         transform: translate(-342%, 71%); 
-      }
+    }
     
+
+    /* text design section */
     .content{
         padding: 20px;
         width: 400px;
