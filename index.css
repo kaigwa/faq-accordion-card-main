@@ -1,5 +1,4 @@
 /* css file-whole design section */
-
 *{
     margin: 0;
     padding: 0;
@@ -21,59 +20,42 @@ body{
     background-size: cover;
 }
 
-.container{
-    position: relative;
-    top: 150px;
-}
-
 
 /* image design section */
 .image{
     display: flex;
     align-items: center;
     margin: auto;
-    /* background-color: brown; */
 }
 
 .sister{
     width: 200px;
-    position: relative;
-    bottom: 105px;
-    left: 50px;
+    /* background-color: brown; */
 }
 
 .shade{
     width: 200px;
-    position: relative;
-    bottom: 50px;
-    right: 150px;
 }
 
 .box{
     display: none;
-
 }
 
 .white{
-    padding: 15px ;
     background-color: white;
     border-radius: 20px;
     height: 500px; 
-    position: relative;
-    top: 0px; 
     box-shadow: 0px 102px 41px rgba(0, 0, 0, 0.03),
     0px 57px 34px rgba(0, 0, 0, 0.1), 0px 25px 25px rgba(0, 0, 0, 0.17);
 }
 
 .content{
-    position: relative;
-    bottom: 50px;
+
 }
 
 h1{   
     text-align: center;
-    position: relative;
-    /* bottom: 60px; */
+
 }
 
 .qn{
@@ -83,7 +65,6 @@ h1{
 .accordion {
     background-color: transparent;
     cursor: pointer;
-    /* padding: 20px 0; */
     width: 100%;
     text-align: left;
     border: none;
@@ -110,7 +91,6 @@ h1{
     display: inline;
     margin-top: 6px;
     float:right;
-    /* transform: rotate(-180deg) */
   }
 
 
@@ -139,22 +119,19 @@ h1{
   hr{
     border: 0.05px solid gray;
     position: relative;
-    /* bottom: 50px; */
     opacity: 0.2;
 }
 
 
 /* content creators selectors */
 .attribution { 
+    background-color: aquamarine;
     font-size: 11px; 
     text-align: center; 
-    position: relative;
-    top: 190px;
 }
 
 .attribution a { 
     color: hsl(273, 75%, 66%);
-    /* color: hsl(228, 45%, 44%);  */
     text-decoration: none;
     font-size: 12px;
 }
@@ -164,57 +141,89 @@ h1{
 @media only screen and (min-width: 768px){
     body{
         width: 100vw;
-        /* margin: auto; */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .white{
-        width: 767px;
-        height: 440px;
+        max-width: 900px;
+        max-height: 500px;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: center;
+        /* gap: 20px; */
         margin: auto;
     }
 
 
-/* image design section */
+/* image container design section */
     .illustration{
-        margin-bottom: 0;
+        width: 50%;
+        height: 100%;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      
     }
 
     .image{
-        transform: scale(1.5);
-        position: relative;
-        top: 70%;
-        right: 101%;
+        /* background-color: black; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* overflow: hidden; */
+        background-image: url('./images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size:cover;
+        padding-right: 32px;
+       
     }
 
     .sister{
-        transform: scale(1.3);
-        position: absolute;
-        bottom: 40%;
-        left: -124%;
-        /* background-color: brown; */
+        /* background-color: cadetblue; */
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 50px;
+        margin-left: -155px; */
     }
 
     .shade{
-      transform: scale(2.5);
-        position: absolute;
-        bottom: 80%;
-        right: 180%;
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        /* background-color: brown; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* margin-top: -270px;
+        margin-left: -350px; */
     }
 
-    .box {
-        display: inherit;
-        transform: translate(-342%, 71%); 
-    }
+    /* .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0.5);
+
+    } */
     
 
     /* text design section */
     .content{
-        padding: 20px;
-        width: 400px;
-        position: absolute;
-        top: 20px;
+        width: 50%;
+        /* background-color: cadetblue; */
     }
 }

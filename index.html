@@ -11,88 +11,84 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<!-- container that carry the content -->
-    <div class="container">
+<!-- container that define the whole card -->
+    <div class="white">
 
-        <!-- section that define the whole card -->
-        <div class="white">
+        <!-- animated portait of a women section/logo -->
+        <div class="illustration">
+            <!-- section that differentiate images that shows on mobile and other devices -->
+            <div class="image"> 
+                <picture>
+                    <source class="sister" media='(min-width:700px)' srcset="./images/illustration-woman-online-desktop.svg" alt="desktop">
+                    <img class="sister" src="./images/illustration-woman-online-mobile.svg" alt="image">
+                </picture>
 
-            <!-- animated portait of a women section/logo -->
-            <div class="illustration">
-                <!-- section that differentiate images that shows on mobile and other devices -->
-                <div class="image"> 
-                    <picture>
-                        <source class="sister" media='(min-width:700px)' srcset="./images/illustration-woman-online-desktop.svg" alt="desktop">
-                        <img class="sister" src="./images/illustration-woman-online-mobile.svg" alt="image">
-                    </picture>
-    
-                    <picture>
-                        <source class="shade" media='(min-width:700px)' srcset="./images/bg-pattern-desktop.svg" alt="bg">
-                        <img class="shade" src="./images/bg-pattern-mobile.svg" alt="pattern">
-                    </picture>
+                <!-- <picture>
+                    <source class="shade" media='(min-width:700px)' srcset="./images/bg-pattern-desktop.svg" alt="bg">
+                    <img class="shade" src="./images/bg-pattern-mobile.svg" alt="pattern">
+                </picture> -->
+            </div>
+
+            <!-- box image -->
+            <div class="box">
+                <img  src="./images/illustration-box-desktop.svg" alt="box" >
+            </div>
+        </div>
+        <!-- end of image section -->
+
+        <!-- begining of the frequent asked question section  -->
+        <div class="content">
+            <!-- title -->
+            <h1>FAQ</h1>
+            <div class="qn">
+                <label for="first" class="accordion">How many team members can I invite?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span> </label>
+                <input type="radio" id="first" name="accordion" >
+                <div class="panel">
+                <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+                    team members for the Premium plan.</p>
                 </div>
-<!-- box image -->
-                <div class="box">
-                    <img  src="./images/illustration-box-desktop.svg" alt="box" >
-                
+            </div><hr>
+            
+            <div class="qn">
+                <label for="second" class="accordion">What is the maximum file upload size? <span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></label>
+                <input type="radio" id="second" name="accordion" checked>
+                <div class="panel">
+                <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
                 </div>
             </div>
-<!-- end of image section -->
+            <hr>
 
-<!-- begining of the frequent asked question section  -->
-            <div class="content">
-                <!-- title -->
-                <h1>FAQ</h1>
-                <div class="qn">
-                    <label for="first" class="accordion">How many team members can I invite?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span> </label>
-                    <input type="radio" id="first" name="accordion" >
-                    <div class="panel">
-                    <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
-                        team members for the Premium plan.</p>
-                    </div>
-                </div><hr>
-                
-                <div class="qn">
-                    <label for="second" class="accordion">What is the maximum file upload size? <span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></label>
-                    <input type="radio" id="second" name="accordion" checked>
-                    <div class="panel">
-                    <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-                    </div>
+            <div class="qn">
+                <label for="third" class="accordion">How do I reset my password?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></label>
+                <input type="radio" id="third" name="accordion">
+                <div class="panel">
+                <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+                    A reset link will be emailed to you.</p>
                 </div>
-                <hr>
-
-                <div class="qn">
-                    <label for="third" class="accordion">How do I reset my password?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></label>
-                    <input type="radio" id="third" name="accordion">
-                    <div class="panel">
-                    <p>Click “Forgot password” from the login page or “Change password” from your profile page.
-                        A reset link will be emailed to you.</p>
-                    </div>
-                </div>
-               <hr>
-
-                <div class="qn">
-                    <label for="fourth" class="accordion">Can I cancel my subscription?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></label>
-                    <input type="radio" id="fourth" name="accordion">
-                    <div class="panel">
-                    <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
-                    </div>
-                </div>
-                <hr>
-
-                <div class="qn">
-                    <label for="fiveth" class="accordion">Do you provide additional support?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></label>
-                    <input type="radio" id="fiveth" name="accordion">
-                    <div class="panel">
-                    <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-                    </div>
-                </div>
-                <hr>
             </div>
-           
+            <hr>
+
+            <div class="qn">
+                <label for="fourth" class="accordion">Can I cancel my subscription?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></label>
+                <input type="radio" id="fourth" name="accordion">
+                <div class="panel">
+                <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="qn">
+                <label for="fiveth" class="accordion">Do you provide additional support?<span><img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow"></span></label>
+                <input type="radio" id="fiveth" name="accordion">
+                <div class="panel">
+                <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                </div>
+            </div>
+            <hr>
         </div>
         
     </div>
+    
 <!-- end of the FAQ section -->
 
 <!-- content creators section -->
