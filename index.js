@@ -1,29 +1,13 @@
-console.log('edwin')
+// declare function all question 'class' selector;
+const questions = document.querySelectorAll('.question');
 
-
-
-
-
-
-
-
-// var acc = document.getElementsByClassName("content");
-// var i;
-
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function() {
-    
-//     this.classList.toggle("active");
-
-//     var panel = this.nextElementSibling;
-//     if (panel.style.display === "block") {
-//       panel.style.display = "none";
-//     } else {
-//       panel.style.display = "block";
-//     }
-//     console.log(this);
-
-//   });
-// }
+// for each question button clicked add event listener function;
+questions.forEach(question => {
+  question.addEventListener('click', () => {
+   
+    // click fuction has to switch to activate the 'active class';
+    question.classList.toggle('active')
+  })
+})
 
 

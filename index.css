@@ -109,17 +109,16 @@ h1{
     font-weight: 700;
 }
 
-/* input[type='radio']{
-    display: none;
-} */
 
-
-/* arrow open/close design section */
+/* arrow down/up design section */
 .arrow{
     display: inline;
     margin-top: 6px;
     float:right;
-    /* transform: rotate(180deg) */
+}
+
+.question.active .arrow{
+    transform: rotate(180deg)
 }
 
 
@@ -137,9 +136,9 @@ h1{
 
 }
 
-/* .panel {
+.question.active .panel {
     max-height: 100px;
-} */
+}
 
 hr{
     border: 0.05px solid gray;
