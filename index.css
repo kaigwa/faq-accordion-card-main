@@ -18,6 +18,7 @@ body{
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
     background-size: cover;
+    /* overflow: hidden; */
 }
 
 
@@ -91,6 +92,7 @@ h1{
     display: inline;
     margin-top: 6px;
     float:right;
+    /* transform: rotate(45deg); */
   }
 
 
@@ -128,6 +130,7 @@ h1{
     /* background-color: aquamarine; */
     font-size: 11px; 
     text-align: center; 
+    height: 20%;
 }
 
 .attribution a { 
@@ -146,6 +149,7 @@ h1{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
 
     .white{
@@ -159,6 +163,19 @@ h1{
 
     }
 
+    .at{
+        width: 140px;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        left: -7.5%;
+        top: 45%;
+        z-index: 1;
+        transform: scale(1.1);
+        /* background-color: burlywood; */
+    }
 
 /* image container design section */
     .illustration{
@@ -168,19 +185,7 @@ h1{
         display: block;
         flex-direction: row;
         align-items: center;
-        overflow: hidden;
-    }
-
-    .at{
-        width: 140px;
-        height: 140px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        position: absolute;
-        left: 12.1%;
-        top: 45%;
-        z-index: 1;
+        /* background-color: brown; */
     }
 
     .image1{
@@ -190,7 +195,27 @@ h1{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
+        /* background-color: brown; */
+        position: relative;
+        top: 0;
+        left: -35%;
     }
+
+    .sister{
+        /* background-color: red; */
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        /* z-index: 1; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        transform: translateX(-91px);
+        position: relative;
+        bottom: 0;
+        left: 5%;
+    }
+
 
     .image2{
         width: 100%;
@@ -199,29 +224,23 @@ h1{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        /* background-color: black; */
+        position: relative;
+        top: -100%;
+        left: -35%;
+        overflow: hidden;
     }
 
-    .sister{
-        /* background-color: red; */
-        width: 400px;
-        display: flex;
-        flex-direction: row;
-        z-index: 1;
-        /* justify-content: center; */
-        /* align-items: center; */
-        transform: translateX(-90px);
-    }
 
     .shade{
         /* background-color: blue; */
-        position: absolute;
-        bottom: 5%;
-        left: -8%;
-        width: 670px;
-        /* display: flex;
-        flex-direction: row; */
-        /* justify-content: center; */
+        position: relative;
+        top: -7.5%;
+        left: -120%;
+        width: 200%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     
     }
 /* 
@@ -235,16 +254,19 @@ h1{
     }  */
     
   
-
     /* text design section */
     .content{
-        width: 50%;
+        /* background-color: cadetblue; */
+        width: 60%;
+        height: 100%;
         margin: auto;
-        padding: 0 50px 0 20px;
+        /* padding: 0 50px 0 20px; */
+        position: relative;
+        left: -10%;
     }
 
     .content h1{
         text-align: start;
-        padding: 20px 0;
+        padding: 40px 0;
     }
 }
