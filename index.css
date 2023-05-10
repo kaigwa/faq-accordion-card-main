@@ -86,7 +86,7 @@ h1{
     padding-bottom: 15px;
 }
 
-.qn{
+.question{
     padding: 10px 0;
 }
 
@@ -98,32 +98,33 @@ h1{
     border: none;
     transition: 0.3s;
     position: relative;
+}
 
-  }
-
-  .accordion:hover {
+.accordion:hover {
     color: hsl(14, 88%, 65%);
-  }
+}
 
-  .accordion
-  :focus{
+.accordion:focus{
     color: hsl(238, 29%, 16%);
     font-weight: 700;
-    }
+}
 
-    input[type='radio']{
+/* input[type='radio']{
     display: none;
-    }
+} */
 
-  .arrow{
+
+/* arrow open/close design section */
+.arrow{
     display: inline;
     margin-top: 6px;
     float:right;
-  }
+    /* transform: rotate(180deg) */
+}
 
 
 /* hidden content design */
-  .panel {
+.panel {
     margin-right: 50px;
     line-height: 18px;
     font-size: 12px;
@@ -134,17 +135,13 @@ h1{
     max-height: 0;
     transition: max-height 1.0s ease;
 
-  }
+}
 
-  input[type='radio']:checked + .panel{
+/* .panel {
     max-height: 100px;
-  }
+} */
 
- /* .active{
-    transform: rotate(180deg)
-  } */
-
-  hr{
+hr{
     border: 0.05px solid gray;
     position: relative;
     opacity: 0.2;
